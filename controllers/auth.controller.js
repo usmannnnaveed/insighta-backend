@@ -11,7 +11,7 @@ export const register = asyncHandler(async (req, res, next) => {
     let user = await createUser(req.body);
     await createPoints({user:user._id})
     
-    // remove password
+    // remove password...
     user = user.toObject();
     delete user.password;
     generateResponse(user, "Register successful", res);
