@@ -1,5 +1,5 @@
 import mongoose  from "mongoose";
-//Assignment Schema
+//Assignment Schemaa
 const assignmentSchema = new mongoose.Schema({
     title: {
         type: String,
