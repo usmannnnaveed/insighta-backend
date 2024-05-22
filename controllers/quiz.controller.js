@@ -23,7 +23,7 @@ export const fetchQuizzes = asyncHandler(async (req, res, next) => {
     generateResponse(quizzes, 'Quizzes fetched successfully', res);
 });
 
-// update quiz when user submit answers;
+// update quiz when user submit answers:
 
 export const updateQuiz = asyncHandler(async (req, res, next) => {
     const quiz = await updateQuiz(req.params.id, req.body);
